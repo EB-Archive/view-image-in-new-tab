@@ -1,0 +1,24 @@
+{
+	"applications": {
+		"gecko": {
+			"id": "new-tab-image@exe-boss"
+		}
+	},
+
+	"manifest_version": 2,
+	"name": "View Image in New Tab",
+	"version": "0.1.0",
+	"author": "ExE Boss",
+
+	"icons": {
+		"16": "icons/16/picture-go.png",
+		"24": "icons/24/picture-go.png",
+		"32": "icons/32/picture-go.png",
+		"48": "icons/48/picture-go.png",
+		"64": "icons/64/picture-go.png",
+		"72": "icons/72/picture-go.png",
+		"96": "icons/96/picture-go.png",
+		"128":"icons/128/picture-go.png",
+		"256":"icons/256/picture-go.png"
+	}
+}
