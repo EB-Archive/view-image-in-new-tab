@@ -19,13 +19,11 @@ let imgs = document.getElementsByTagName("img");
 for (let i = 0; i < imgs.length; i++) {
 	/** @type HTMLElement */
 	let img = imgs[i];
-	if (img.hasAttribute("contextmenu") && !img.getAttribute("contextmenu").startsWith("new-tab-image@exe-boss:menu")) {
+	if (img.hasAttribute("contextmenu") && !img.getAttribute("contextmenu").startsWith("eb-img-menu:")) {
 		continue;
 	}
-	let menuId = "new-tab-image@exe-boss:menu?id=" + i;
+	let menuId = "eb-img-menu:" + Math.floor(Math.random() * 65535 + 1).toString(16) + ":" + i.toString(16);
 
-	/** @type String */
-	let functionName = Math.floor(Math.random() * 65535 + 1).toString(16);
 	/** @type HTMLMenuElement */
 	let menu = document.createElement("menu");
 	menu.setAttribute("type", "context");
@@ -44,10 +42,12 @@ for (let i = 0; i < imgs.length; i++) {
 		} else {
 			let protocolRegex = /^\w+:\/\//;
 			let hostNameRegex = /^\w+.\w+/;
-			if (url.match(hostNameRegex)) {
-				url = window.location.protocol + "//" + url;
-			} else if (!url.match(protocolRegex)) {
-				url = window.location.protocol + "//" + window.location.host + '/' + url;
+			if (!url.match(protocolRegex)) {
+				if (url.match(hostNameRegex)) {
+					url = window.location.protocol + "//" + url;
+				} else {
+					url = window.location.protocol + "//" + window.location.host + '/' + url;
+				}
 			}
 		}
 		// calling `browser.tabs.create({url: String(message.url)});` here causes an error for some odd reason
