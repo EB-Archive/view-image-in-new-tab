@@ -2,35 +2,31 @@
 	"applications": {
 		"gecko": {
 			"id": "new-tab-image@exe-boss",
-			"strict_min_version": "45.0"
+			"strict_min_version": "48.0"
 		}
 	},
 
 	"manifest_version": 2,
-	"name": "View Image in New Tab",
-	"version": "0.1.1",
-	"author": "ExE Boss",
+	"name":	"View Image in New Tab",
+	"version":	"0.2.0",
+	"author":	"ExE Boss",
 
+	"permissions": [
+		"contextMenus"
+	],
 	"icons": {
-		"16": "icons/16/picture-go.png",
-		"24": "icons/24/picture-go.png",
-		"32": "icons/32/picture-go.png",
-		"48": "icons/48/picture-go.png",
-		"64": "icons/64/picture-go.png",
-		"72": "icons/72/picture-go.png",
-		"96": "icons/96/picture-go.png",
-		"128":"icons/128/picture-go.png",
-		"256":"icons/256/picture-go.png"
+		"16":	"icons/16/picture-go.png",
+		"24":	"icons/24/picture-go.png",
+		"32":	"icons/32/picture-go.png",
+		"48":	"icons/48/picture-go.png",
+		"64":	"icons/64/picture-go.png",
+		"72":	"icons/72/picture-go.png",
+		"96":	"icons/96/picture-go.png",
+		"128":	"icons/128/picture-go.png",
+		"256":	"icons/256/picture-go.png"
 	},
 
 	"background": {
 		"scripts": ["background.js"]
-	},
-	"content_scripts": [{
-		"matches": ["<all_urls>"],
-		"js": ["content/content.js"]
-	}],
-	"web_accessible_resources": [
-		"icons/*/picture-go.*"
-	]
+	}
 }
