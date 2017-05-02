@@ -8,8 +8,9 @@
 
 	"manifest_version": 2,
 	"name":	"View Image in New Tab",
-	"version":	"0.2.0",
+	"version":	"0.2.1",
 	"author":	"ExE Boss",
+	"description":	"Adds the ‘View Image in New Tab’ context menu item to the Firefox Context Menu.",
 
 	"permissions": [
 		"contextMenus"
