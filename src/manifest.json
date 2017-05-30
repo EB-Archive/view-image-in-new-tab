@@ -7,10 +7,11 @@
 	},
 
 	"manifest_version": 2,
-	"name":	"View Image in New Tab",
-	"version":	"0.2.1",
+	"name":	"__MSG_extensionName__",
+	"version":	"0.2.2",
 	"author":	"ExE Boss",
-	"description":	"Adds the ‘View Image in New Tab’ context menu item to the Firefox Context Menu.",
+	"description":	"__MSG_description__",
+	"default_locale": "en",
 
 	"permissions": [
 		"contextMenus"

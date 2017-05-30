@@ -1,0 +1,6 @@
+{
+	"extensionName":	{ "message":	"View Image in New Tab"	},
+	"description":	{ "message":	"Adds the ‘View Image in New Tab’ context menu item to the image context menu."	},
+
+	"contextMenus_image_createTab":	{ "message":	"View Image in New Tab"	}
+}

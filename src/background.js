@@ -68,7 +68,7 @@ function parseUrlWebExt(srcUrl, pageUrl) {
 
 browser.contextMenus.create({
 	id:	"image:createTab",
-	title:	"View Image in New Tab",
+	title:	browser.i18n.getMessage("contextMenus_image_createTab"),
 	contexts:	["image"]
 });
 
