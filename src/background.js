@@ -16,8 +16,8 @@
  */
 /* global browser */
 
-const PAGE_URL_REGEX	= /^(\w+:)\/\/((?:[^\.\/]+\.)*\w+)\/?/;
-const PROTOCOL_REGEX	= /^\w+:\/\//;
+const PAGE_URL_REGEX	= /^(\w+:)(?:\/\/)?((?:[^\.\/]+\.)*\w+)\/?/;
+const PROTOCOL_REGEX	= /^\w+:(?:\/\/)?/;
 const HOST_NAME_REGEX	= /^\w+.\w+/;
 
 /**
