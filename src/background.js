@@ -16,9 +16,9 @@
  */
 /* global browser */
 
-const PAGE_URL_REGEX	= /^(\w+:)(?:\/\/)?((?:[^\.\/]+\.)*\w+)\/?/;
-const PROTOCOL_REGEX	= /^\w+:(?:\/\/)?/;
-const HOST_NAME_REGEX	= /^\w+.\w+/;
+const PAGE_URL_REGEX	= /^([A-Za-z0-9.+-]+:)(?:\/\/)?((?:[A-Za-z0-9-]+\.)*[A-Za-z0-9-]+)\/?/;
+const PROTOCOL_REGEX	= /^[A-Za-z0-9.+-]+:(?:\/\/)?/;
+const HOST_NAME_REGEX	= /^(?:[A-Za-z0-9-]+\.)*[A-Za-z0-9-]+/;
 
 /**
  * Parse the URL and convert it into a valid value for the <code>url</code> parameter
